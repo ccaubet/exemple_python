@@ -11,7 +11,8 @@
 #!/usr/bin/python3
 
 def capital_case(v):
-    return v.capitalize()   #permer de passer la première lettre en majuscule
+    return v.capitalize()   #permet de passer la première lettre en majuscule
 
-a=capital_case('fdkfjdkl')
-print(a)
+def test_capital_case():  #je lance la fonction pytest .\src\app.py dans le terminal pour ne lancer que cette fonction car la fonction commence par test_
+    resultat=capital_case("adrien")
+    assert resultat=='Adrien'
